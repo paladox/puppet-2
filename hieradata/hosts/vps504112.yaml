@@ -7,9 +7,14 @@ puppetmaster::dbuser: puppet
 puppetmaster::dbname: puppet
 puppetmaster::dbpassword: 'test'
 puppetmaster_version: 4
-puppetmaster::use_puppetdb: false
+puppetmaster::use_puppetdb: true
 puppetdb_host: vps504112.ovh.net
 puppetdb::db_ro_host: localhost
 # these are tests passwords on prod add them into the private repo
 puppetdb::db_password: 'miraheze'
 puppetdb::password::rw: 'miraheze'
+puppetmaster::puppetdb::postgres_users:
+  puppetdb@vps504112:
+    user: puppetdb
+    database: puppetdb
+    password: "%{::puppetdb::database::puppetdb_pass}"
