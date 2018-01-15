@@ -2,7 +2,7 @@ groups:
   ops:
     gid: 2000
     description: roots, sudo everywhere
-    members: [ndkilla, reception, southparkfan]
+    members: [ndkilla, reception, southparkfan, paladox]
     privileges: ['ALL = (ALL) NOPASSWD: ALL']
   mediawiki-admins:
     gid: 2001
