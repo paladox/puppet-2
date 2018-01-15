@@ -23,7 +23,8 @@ class puppetmaster(
     $dbpassword = hiera('puppetmaster::dbpassword')
 
     file { '/etc/puppet/hiera.yaml':
-        ensure  => 'puppet:///modules/puppetmaster/hiera.yaml',
+        ensure  => present,
+        source  => 'puppet:///modules/puppetmaster/hiera.yaml',
         require => Package['puppetmaster'],
         notify  => Service['apache2'],
     }
