@@ -101,3 +101,9 @@ users:
     name: paladox
     realname: Paladox
     ssh_keys: [ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAu7ekU1Mj+gMv6qj/vKp4RXpYAf+yxqLb5gdWk/0QST patrickmulhall@Patricks-MBP.home]
+  zppix:
+    ensure: present
+    uid: 1010
+    name: zppix
+    realname: Zppix
+    ssh_keys: []
