@@ -1,0 +1,8 @@
+-- Grants for 'piwik'@''
+
+GRANT CREATE, PROCESS
+    ON *.* TO 'piwik'@'%'
+    IDENTIFIED BY '<%= @piwik_password %>';
+
+GRANT SELECT, INSERT, UPDATE, DELETE, DROP, CREATE, ALTER, CREATE TEMPORARY TABLES, INDEX
+    ON `piwik`.* TO 'piwik'@'%';

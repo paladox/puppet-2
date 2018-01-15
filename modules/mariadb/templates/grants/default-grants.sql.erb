@@ -1,0 +1,11 @@
+-- Grants for 'root'@'localhost'
+
+GRANT ALL PRIVILEGES
+    ON *.* TO 'root'@'localhost'
+    IDENTIFIED BY '<%= @password %>'
+    WITH GRANT OPTION;
+
+-- Grants for 'icinga'@'185.52.1.76'
+
+GRANT USAGE, PROCESS
+    ON *.* TO 'icinga'@'185.52.1.76';

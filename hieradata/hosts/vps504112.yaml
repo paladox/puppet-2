@@ -1,0 +1,15 @@
+users::groups:
+  - puppet-users
+puppetmaster: true
+puppetmaster_hostname: vps504112.ovh.net
+puppetmaster::dbserver: db2.miraheze.org
+puppetmaster::dbuser: puppet
+puppetmaster::dbname: puppet
+puppetmaster::dbpassword: 'test'
+puppetmaster_version: 4
+puppetmaster::use_puppetdb: false
+puppetdb_host: vps504112.ovh.net
+puppetdb::db_ro_host: localhost
+# these are tests passwords on prod add them into the private repo
+puppetdb::db_password: 'miraheze'
+puppetdb::password::rw: 'miraheze'

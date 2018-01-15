@@ -1,0 +1,7 @@
+jobrunner: false
+mailserver: false
+arcanist: false
+mwdumps: false
+puppetmaster: false
+mediawiki::branch: 'REL1_30'
+acme: false
