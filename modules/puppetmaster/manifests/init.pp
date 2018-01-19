@@ -25,8 +25,6 @@ class puppetmaster(
     file { '/etc/puppet/hiera.yaml':
         ensure  => present,
         source  => 'puppet:///modules/puppetmaster/hiera.yaml',
-        user    => 'root',
-        group   => 'root',
         require => Package['puppetmaster'],
         notify  => Service['apache2'],
     }
@@ -34,8 +32,6 @@ class puppetmaster(
     file { '/etc/puppet/puppet.conf':
         ensure  => present,
         content => template("puppetmaster/puppet_${puppetmaster_version}.conf"),
-        user    => 'root',
-        group   => 'root',
         require => Package['puppetmaster'],
         notify  => Service['apache2'],
     }
@@ -43,8 +39,6 @@ class puppetmaster(
     file { '/etc/puppet/auth.conf':
         ensure  => present,
         source  => "puppet:///modules/puppetmaster/auth_${puppetmaster_version}.conf",
-        user    => 'root',
-        group   => 'root',
         require => Package['puppetmaster'],
         notify  => Service['apache2'],
     }
@@ -52,8 +46,6 @@ class puppetmaster(
     file { '/etc/puppet/fileserver.conf':
         ensure  => present,
         source  => 'puppet:///modules/puppetmaster/fileserver.conf',
-        user    => 'root',
-        group   => 'root',
         require => Package['puppetmaster'],
         notify  => Service['apache2'],
     }
