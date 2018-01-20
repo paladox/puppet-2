@@ -1,7 +1,7 @@
 # class base::puppet
 class base::puppet {
 
-    $puppetmaster_hostname = hiera('puppetmaster_hostname', 'vps504112')
+    $puppetmaster_hostname = hiera('puppetmaster_hostname', 'vps504112.ovh.net')
     $puppetmaster_version = hiera('puppetmaster_version', 4)
 
     cron { 'puppet-run-no-force':
