@@ -102,7 +102,6 @@ users:
     realname: Paladox
     ssh_keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAu7ekU1Mj+gMv6qj/vKp4RXpYAf+yxqLb5gdWk/0QST patrickmulhall@Patricks-MBP.home
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCop6VDcOTgiuYbULbwCX8AbD915BBKAtyDEP06yb1ZJygjLjI8S3lXno65X38ZWbEatvPpD2o8IG/i+ExHrPGqk99/ZKTyMM0dIY2VwTYxVUjY4n4t9JHDMXpKzAq5qs9JlXn2zQD6pBK8b6mJmXTdXnIraBFLF+/8tBvF59xRyS6duWHJekcgAY6JyEMsdphShphwUPkRS7TPRNAg1XrPTbfrDo5j+ZkYsuSe4xr15aOt27ZsApEHoelBuvojV4DrkcWEo4qTs+Fh2KQEeKG72B3oZgbpu3pwkeUTXLRM5PJSEKddJL91lbgCLNc5yvgDGaTjsCCWAufwJstGVQmP patrickmulhall@Patricks-MacBook-Pro.local
   zppix:
     ensure: present
     uid: 1010
