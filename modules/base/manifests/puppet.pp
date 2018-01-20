@@ -34,9 +34,9 @@ class base::puppet {
 
     if !hiera('puppetmaster') {
         file { '/etc/puppet/puppet.conf':
-            ensure => present,
-            source => "puppet:///modules/base/puppet/puppet_${puppetmaster_version}.conf",
-            mode   => '0444',
+            ensure  => present,
+            content => template("base/puppet/puppet_${puppetmaster_version}.conf"),
+            mode    => '0444',
         }
     }
 
