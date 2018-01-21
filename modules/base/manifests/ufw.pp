@@ -17,6 +17,11 @@ class base::ufw {
         port  => 22,
     }
 
+    ufw::allow { 'gerrit_ssh':
+        proto => 'tcp',
+        port  => 29418,
+    }
+
     ufw::allow { 'nrpe':
         proto => 'tcp',
         port  => 5666,
